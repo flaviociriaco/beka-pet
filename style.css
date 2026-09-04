@@ -470,6 +470,25 @@ ul {
   flex-grow: 1;
 }
 
+/* Container da Imagem do Produto */
+.product-image {
+  width: 100%;
+  height: 220px; /* Altura padrão para todos os cards */
+  overflow: hidden;
+  background-color: #f8f9fa; /* Fundo neutro para preencher eventuais sobras */
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+/* Ajuste da imagem para caber sem achatar */
+.product-image img {
+  width: 100%;
+  height: 100%;
+  object-fit: contain; /* Garante que a foto/banner apareça inteira sem cortes ou distorção */
+  padding: 5px; /* Espaçamento leve interno */
+}
+
 /* ==========================================================================
    Avaliações Section
    ========================================================================== */
